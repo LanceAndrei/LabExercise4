@@ -3,6 +3,7 @@ package lance.wico.com.labexercise4;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -77,5 +78,16 @@ public class MainActivity extends AppCompatActivity {
         snackbar.show();
 
     }
+
+
+
+    @Override
+    protected void onStart(){
+
+        super.onStart();
+        Log.d( "Lab Exercise 4", "onResume() has executed");
+
+    }
+
 
 }
